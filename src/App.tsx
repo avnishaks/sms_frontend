@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
 import {AnimationComponent} from "./components/index";
 import { useState, useEffect } from "react";
+import React from "react";
 
 export default function App() {
   const [status, setStatus] = useState('loading'); // Initialize with 'loading'
 
   useEffect(() => {
+    console.log("Hello Coders")
     const timer = setTimeout(() => {
       setStatus('xyxxs');
     }, 1000);
